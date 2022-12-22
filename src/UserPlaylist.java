@@ -27,5 +27,7 @@ public class UserPlaylist {
       this.songs.add(song);
     }
   
-   
+    public void removeSong(Song song) {
+      this.songs.remove(song);
+    }
   }

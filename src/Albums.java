@@ -28,19 +28,6 @@ public class Album {
     this.artist = artist;
   }
 
-  public int getYear() {
-    return this.year;
-  }
-
-  public void setYear(int year) {
-    this.year = year;
-  }
-
-  public List<Song> getSongs() {
-    return this.songs;
-  }
-
-  public void setSongs(List<Song> songs) {
-    this.songs = songs;
+  
   }
 }

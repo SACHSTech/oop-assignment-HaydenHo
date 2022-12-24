@@ -1,4 +1,4 @@
-public class Song {
+public class Song extends Media{
     private String title;
     private String artist;
     private int duration;

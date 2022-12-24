@@ -1,4 +1,4 @@
-public class Podcasts extends SpotifyList {
+public class Podcasts extends Media {
     private String title;
     private String artist;
     private int duration;

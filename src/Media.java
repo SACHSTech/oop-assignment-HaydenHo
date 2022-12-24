@@ -4,6 +4,7 @@ public class Media {
     private String strType;
     private String strArtist;
     private String strDate;
+    private int intMediaDuration;
 
 
     /**
@@ -12,12 +13,14 @@ public class Media {
      * @param mediaType - type of media 
      * @param mediaDate - release date of media
      * @param mediaArtist - artist of media
+     * @param mediaDuration - duration of media
      */
-    public Media(String mediaName, String mediaType, String mediaDate, String mediaArtist){
+    public Media(String mediaName, String mediaType, String mediaDate, String mediaArtist, int mediaDuration){
         strName = mediaName;
         strType = mediaType;
         strArtist = mediaArtist;
         strDate = mediaDate;
+        intMediaDuration = mediaDuration;
     }
 
     /*

@@ -1,13 +1,14 @@
 public class Podcasts extends Media {
     private String title;
-    private String artist;
-    private int duration;
-    private Album album;
-  
-    public Podcasts(String title, String artist, int duration) {
-      this.title = title;
-      this.artist = artist;
-      this.duration = duration;
+    private String mediaArtist;
+    private int mediaDuration;
+    private String mediaName;
+   
+    public Podcasts(String mediaName, String mediaType, String mediaDate, String mediaArtist, int mediaDuration) {
+        super(mediaName, mediaType, mediaDate, mediaArtist, mediaDuration);
+      this.mediaName = mediaName;
+      this.mediaArtist = mediaArtist;
+      this.mediaDuration = mediaDuration;
       
     }
   
@@ -35,11 +36,4 @@ public class Podcasts extends Media {
       this.duration = duration;
     }
   
-    public Album getAlbum() {
-      return this.album;
-    }
-  
-    public void setAlbum(Album album) {
-      this.album = album;
-    }
 }

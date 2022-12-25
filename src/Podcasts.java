@@ -20,20 +20,20 @@ public class Podcasts extends Media {
       this.title = title;
     }
   
-    public String getArtist() {
-      return this.artist;
+    public String getMediaArtist() {
+      return this.mediaArtist;
     }
   
-    public void setArtist(String artist) {
-      this.artist = artist;
+    public void setMediaArtist(String artist) {
+      this.mediaArtist = artist;
     }
   
-    public int getDuration() {
-      return this.duration;
+    public int getMediaDuration() {
+      return this.mediaDuration;
     }
   
-    public void setDuration(int duration) {
-      this.duration = duration;
+    public void setMediaDuration(int duration) {
+      this.mediaDuration = duration;
     }
   
 }

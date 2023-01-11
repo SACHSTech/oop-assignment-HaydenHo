@@ -2,13 +2,11 @@ public class Song extends Media{
     private String title;
     private String artist;
     private int duration;
-    private Album album;
   
-    public Song(String title, String artist, int duration, Album album) {
+    public Song(String title, String artist, int duration) {
       this.title = title;
       this.artist = artist;
       this.duration = duration;
-      this.album = album;
     }
   
     public String getTitle() {
@@ -33,13 +31,5 @@ public class Song extends Media{
   
     public void setDuration(int duration) {
       this.duration = duration;
-    }
-  
-    public Album getAlbum() {
-      return this.album;
-    }
-  
-    public void setAlbum(Album album) {
-      this.album = album;
     }
   }

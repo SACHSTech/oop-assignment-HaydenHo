@@ -126,7 +126,7 @@ public class Main {
 
                     // Adds user selected films
                     if(intMedia < 6){
-                        filmList.add(newSpotifyList.getSong(intMedia - 1).getName());  
+                        mediaList.add(newSpotifyList.getSong(intMedia - 1).getName());  
                         objMediaList.add(newSpotifyList.getSong(intMedia - 1));  
                     }
                     else if(intMedia > 5 && intMedia < 11){

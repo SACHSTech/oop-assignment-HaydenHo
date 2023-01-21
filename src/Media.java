@@ -1,4 +1,4 @@
-public class Media {
+public abstract class Media {
     // Setting Variables
     private String strName;
     private String strType;

@@ -30,13 +30,13 @@ public class Main {
         newSpotifyList.getMedia();
         System.out.println();
         System.out.println("What would you like to do?");
-        System.out.println("1. Browse films (Film details)\n2. Customize Lists\n3. Recommendations\n4. Exit");
+        System.out.println("1. Browse Songs\n2. Customize Lists\n3 Exit");
         System.out.println();
         
         strChoice = sc.nextLine();
         switch(strChoice){
             case "1":
-                System.out.println("Which film would you like to browse? (Type the number of the film): ");
+                System.out.println("Which song would you like to browse? (Type the number of the song): ");
                 intMedia = sc.nextInt();
                 sc.nextLine();
                 System.out.println();
@@ -65,7 +65,7 @@ public class Main {
                 System.out.println();
                 System.out.println("Here is your list so far: ");
 
-                // Displays all films in the user's list
+                // Show the songs in the user's list
                 for(int i = 0; i < 10; i++){
                     if((i + 1) <= mediaList.size()){
                         System.out.println("[" + mediaList.get(i) + "]");
@@ -79,18 +79,18 @@ public class Main {
                 sc.nextLine();
                 System.out.println("Would you like to add to your list? Yes/No");
 
-                // Makes sure that second loop doesnt automatically open the list
+                // Makes sure that second loop doesn't automatically open the list
                 blnList = false;
                 strChoice = sc.nextLine();
 
-                if(strChoice.equalsIgnoreCase("yes") && filmList.size() <= 10){
+                if(strChoice.equalsIgnoreCase("yes") && mediaist.size() <= 10){
                     System.out.println("What film would you like to add? (Type the number of the film)");
                     System.out.println("Type '11' to stop adding films");
                     blnList = true;
                 }
 
                 // This occurs when the user's list is full
-                else if(strChoice.equalsIgnoreCase("yes") && filmList.size() > 10){
+                else if(strChoice.equalsIgnoreCase("yes") && mediaList.size() > 10){
                     while(true){
                         System.out.println("Your list is full! Which slot would you like to replace: ");
                         intSlot = sc.nextInt();

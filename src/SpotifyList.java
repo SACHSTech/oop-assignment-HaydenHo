@@ -45,9 +45,9 @@ public class SpotifyList {
         }
     }
     
-    public void getFilms(){
+    public void getMedia(){
         System.out.println("--Songs--");
-        for(int i = 0; i < songLis.size(); i++){
+        for(int i = 0; i < songList.size(); i++){
             System.out.println((i + 1) + ". " + songList.get(i).getName());
         }
         System.out.println();

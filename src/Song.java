@@ -1,12 +1,13 @@
 public class Song extends Media{
-    private String title;
-    private String artist;
-    private int duration;
+    private String strTitle;
+    private String strArtist;
+    private int intDuration;
   
     public Song(String title, String artist, int duration) {
-      this.title = title;
-      this.artist = artist;
-      this.duration = duration;
+      super(title, artist, artist, artist, duration);
+      this.stritle = title;
+      this.strArtist = artist;
+      this.intDuration = duration;
     }
   
     public String getTitle() {
@@ -32,4 +33,6 @@ public class Song extends Media{
     public void setDuration(int duration) {
       this.duration = duration;
     }
+
+   
   }

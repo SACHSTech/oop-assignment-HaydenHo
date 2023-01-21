@@ -76,4 +76,5 @@ public class SpotifyList {
      */
     public Podcasts getPodcasts(int i){
         return podcastList.get(i);
+    }
 }

@@ -14,7 +14,6 @@ public class Main {
     boolean blnMenu = true;
     boolean blnList = false;
     ArrayList<String> mediaList = new ArrayList<String>();
-    ArrayList<String> genreList = new ArrayList<String>();
     ArrayList<Media> objMediaList = new ArrayList<Media>();
 
     SpotifyList newSpotifyList = new SpotifyList();
@@ -140,11 +139,6 @@ public class Main {
                         System.out.println("Type a real option!");
                     }
                 }
-                break;
-                System.out.println("Type any key to continue: ");
-                System.out.println();
-                sc.nextLine();
-                System.out.println();
                 break;
                 
             case "3":

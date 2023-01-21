@@ -35,5 +35,7 @@ public class Podcasts extends Media {
     public void setMediaDuration(int duration) {
       this.mediaDuration = duration;
     }
+
+    }
   
 }

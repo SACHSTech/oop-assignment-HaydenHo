@@ -69,5 +69,5 @@ public class Media {
         return getName();
     }
 
-
+public abstract void setLike();
 }

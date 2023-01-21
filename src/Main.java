@@ -83,8 +83,8 @@ public class Main {
                 blnList = false;
                 strChoice = sc.nextLine();
 
-                if(strChoice.equalsIgnoreCase("yes") && mediaist.size() <= 10){
-                    System.out.println("What film would you like to add? (Type the number of the film)");
+                if(strChoice.equalsIgnoreCase("yes") && mediaList.size() <= 10){
+                    System.out.println("What song would you like to add? (Type the number of the film)");
                     System.out.println("Type '11' to stop adding films");
                     blnList = true;
                 }
@@ -104,11 +104,11 @@ public class Main {
 
                             // Sets films for both the object and string array
                             if(intMedia < 6){
-                                filmList.set(intSlot - 1, newSpotifyList.getSong(intMedia - 1).getName());
+                                mediaList.set(intSlot - 1, newSpotifyList.getSong(intMedia - 1).getName());
                                 objMediaList.set(intSlot - 1, newSpotifyList.getSong(intMedia - 1));
                             }
                             else if(intMedia > 5 && intMedia < 11){
-                                filmList.set(intSlot - 1, newSpotifyList.getPodcasts(intMedia - 6).getName());
+                                mediaList.set(intSlot - 1, newSpotifyList.getPodcasts(intMedia - 6).getName());
                                 objMediaList.set(intSlot - 1, newSpotifyList.getPodcasts(intMedia - 6));
                             }      
                             break;

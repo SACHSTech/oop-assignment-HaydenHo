@@ -44,6 +44,19 @@ public class SpotifyList {
             System.out.println((i + 6) + ". " + podcastList.get(i).getName());
         }
     }
+    
+    public void getFilms(){
+        System.out.println("--Songs--");
+        for(int i = 0; i < songLis.size(); i++){
+            System.out.println((i + 1) + ". " + songList.get(i).getName());
+        }
+        System.out.println();
+
+        System.out.println("--Spotify--");
+        for(int i = 0; i < podcastList.size(); i++){
+            System.out.println((i + 6) + ". " + podcastList.get(i).getName());
+        }
+    }
       /**
      * Method to get songs from the song list
      * 

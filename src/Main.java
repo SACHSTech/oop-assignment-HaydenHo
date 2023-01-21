@@ -130,7 +130,7 @@ public class Main {
                         objMediaList.add(newSpotifyList.getSong(intMedia - 1));  
                     }
                     else if(intMedia > 5 && intMedia < 11){
-                        filmList.add(newSpotifyList.getPodcasts(intMedia - 6).getName());  
+                        mediaList.add(newSpotifyList.getPodcasts(intMedia - 6).getName());  
                         objMediaList.add(newSpotifyList.getPodcasts(intMedia - 6));  
                     }      
                     else if(intMedia == 11){
@@ -141,74 +141,13 @@ public class Main {
                     }
                 }
                 break;
-
-            case "3":
-                System.out.println("Based on your list, here are some recommendations: ");
-                System.out.println();
-
-        
-
-                // Adds genres from user list to genreList
-                for(int i = 0; i < objMediaList.size(); i++){
-                    genreList.add(objMediaList.get(i).getGenre());
-                }
-
-                // Counter variable used to count number of recommended shows
-                intCounter = 1;
-
-                // For loop used to check all genres of films in user list and assigns a recommendation
-                for(int i = 0; i < genreList.size(); i++){
-
-                    // If statements check to see if the films in the user list contain a specific genre
-                    if(genreList.get(i).contains("Superhero") && !blnSuperHero){
-                        System.out.println(intCounter + ". Spider-Man: No Way Home");
-                        blnSuperHero = true;
-                        intCounter++;
-                    }
-
-                    if(genreList.get(i).contains("Crime") && !blnCrime){
-                        System.out.println(intCounter + ". Prison Break");
-                        blnCrime = true;
-                        intCounter++;
-                    }
-
-                    if(genreList.get(i).contains("Adventure") && !blnAdventure){
-                        System.out.println(intCounter + ". Game of Thrones");
-                        blnAdventure = true;
-                        intCounter++;
-                    }
-
-                    if(genreList.get(i).contains("Comedy") && !blnComedy){
-                        System.out.println(intCounter + ". 21 Jump Street");
-                        blnComedy = true;
-                        intCounter++;
-                    }
-
-                    if(genreList.get(i).contains("Drama") && !blnDrama){
-                        System.out.println(intCounter + ". The Shawshank Redemption");
-                        blnDrama = true;
-                        intCounter++;
-                    }
-
-                    if(genreList.get(i).contains("Horror") && !blnHorror){
-                        System.out.println(intCounter + ". The Walking Dead");
-                        blnHorror = true;
-                        intCounter++;
-                    }
-
-                    if(genreList.get(i).contains("Sci-Fi") && !blnSciFi){
-                        System.out.println(intCounter + ". Star Wars");
-                        blnSciFi = true;
-                        intCounter++;
-                    }
-                }
                 System.out.println("Type any key to continue: ");
                 System.out.println();
                 sc.nextLine();
                 System.out.println();
                 break;
                 
-            case "4":
+            case "3":
                 // Exits the program
                 blnMenu = false;
         }

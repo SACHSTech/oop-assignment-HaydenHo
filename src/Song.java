@@ -5,7 +5,7 @@ public class Song extends Media{
   
     public Song(String title, String artist, int duration) {
       super(title, artist, artist, artist, duration);
-      this.stritle = title;
+      this.strTitle = title;
       this.strArtist = artist;
       this.intDuration = duration;
     }

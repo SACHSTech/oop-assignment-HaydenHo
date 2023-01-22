@@ -2,37 +2,49 @@ public class Song extends Media{
     private String strTitle;
     private String strArtist;
     private int intDuration;
+    private int intTotalListener;
   
-    public Song(String title, String artist, int duration) {
-      super(title, artist, artist, artist, duration);
+    public Song(String title, String artist, int duration, int TotalListener) {
+      super(title, artist, artist, artist, duration, TotalListener);
       this.strTitle = title;
       this.strArtist = artist;
       this.intDuration = duration;
+      this.intTotalListener = TotalListener;
     }
   
     public String getTitle() {
-      return this.title;
+      return this.strTitle;
     }
   
     public void setTitle(String title) {
-      this.title = title;
+      this.strTitle = title;
     }
   
     public String getArtist() {
-      return this.artist;
+      return this.strArtist;
     }
   
     public void setArtist(String artist) {
-      this.artist = artist;
+      this.strArtist = artist;
     }
   
     public int getDuration() {
-      return this.duration;
+      return this.intDuration;
     }
   
     public void setDuration(int duration) {
-      this.duration = duration;
+      this.intDuration = duration;
     }
 
+    public int getListeners() {
+      return this.intTotalListener;
+    }
+
+    public void setListeners() {
+      this.intTotalListener = intTotalListener;
+    }
+    public int TotalListeners() {
+      return (getListeners() / getDate());
+    }
    
   }

@@ -3,8 +3,9 @@ public class Podcasts extends Media {
     private String mediaArtist;
     private int mediaDuration;
     private String mediaName;
+    private int 
    
-    public Podcasts(String mediaName, String mediaType, String mediaDate, String mediaArtist, int mediaDuration) {
+    public Podcasts(String mediaName, String mediaType, String mediaDate, String mediaArtist, int mediaDuration, int TotalListener) {
         super(mediaName, mediaType, mediaDate, mediaArtist, mediaDuration);
       this.mediaName = mediaName;
       this.mediaArtist = mediaArtist;
@@ -35,7 +36,12 @@ public class Podcasts extends Media {
     public void setMediaDuration(int duration) {
       this.mediaDuration = duration;
     }
-
+    public int TotalListener(){
+      
     }
+    public int TotalListener() {
+      return (getListeners() / getDate());
+    }
+   }
   
-}
+

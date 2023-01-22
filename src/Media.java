@@ -5,6 +5,7 @@ public abstract class Media {
     private String strArtist;
     private String strDate;
     private int intMediaDuration;
+    private int intTotalListener;
 
 
     /**
@@ -14,13 +15,15 @@ public abstract class Media {
      * @param mediaDate - release date of media
      * @param mediaArtist - artist of media
      * @param mediaDuration - duration of media
+     * @param TotalListener - total listner of media
      */
-    public Media(String mediaName, String mediaType, String mediaDate, String mediaArtist, int mediaDuration){
+    public Media(String mediaName, String mediaType, String mediaDate, String mediaArtist, int mediaDuration, int TotalListener){
         strName = mediaName;
         strType = mediaType;
         strArtist = mediaArtist;
         strDate = mediaDate;
         intMediaDuration = mediaDuration;
+        intTotalListener = TotalListener;
     }
 
     /*
@@ -60,6 +63,13 @@ public abstract class Media {
         return strDate;
     }
 
+    public int getDuration() {
+        return intMediaDuration;
+    }
+
+    public int getListeners() {
+        return intTotalListener;
+    }
     /*
      * Returns the name of the media
      * 
@@ -69,5 +79,5 @@ public abstract class Media {
         return getName();
     }
 
-public abstract void setLike();
+public abstract int TotalListeners(); 
 }

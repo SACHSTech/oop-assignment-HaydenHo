@@ -41,6 +41,9 @@ public class Main {
     order.printOrderSummary();
     // Print out the total cost of the order
     System.out.println("Total cost: $" + order.calculateTotalCost());
+    pizza.cook();
+    burger.cook();
+    sandwich.cook();
     scanner.close();
   }
 }

@@ -60,8 +60,8 @@ public class SpotifyList {
       /**
      * Method to get songs from the song list
      * 
-     * @param i used to indicate movie number
-     * @return the user's desired movie
+     * @param i used to indicate Song number
+     * @return the user's desired Song
      */
 
     public Song getSong(int i){
@@ -69,10 +69,10 @@ public class SpotifyList {
     }
 
     /**
-     * Method to get podcasts from the show list
+     * Method to get podcasts from the Media list
      * 
-     * @param i used to indicate show number
-     * @return the user's desired show
+     * @param i used to indicate Podcast number
+     * @return the user's desired podcast
      */
     public Podcasts getPodcasts(int i){
         return podcastList.get(i);

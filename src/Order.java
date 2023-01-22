@@ -38,5 +38,6 @@ class Order {
     for (Food food : foodList) {
       System.out.println("- " + food.getName());
     }
+    System.out.println("\n");
   }
 }

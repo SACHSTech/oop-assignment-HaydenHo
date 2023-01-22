@@ -4,14 +4,20 @@ public class Main {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     // Create a food object
-    Food pizza = new Food("Pizza", 15.99, "Dough, tomato sauce, cheese");
-    Food burger = new Food("Burger", 12.99, "Beef patty, lettuce, tomato, cheese");
-    Food sandwich = new Food("Sandwich", 8.99, "Bread, chicken, lettuce, mayo");
+    Food pizza = new FastFood("Pizza", 15.99, "Dough, tomato sauce, cheese");
+    Food burger = new FastFood("Burger", 12.99, "Beef patty, lettuce, tomato, cheese");
+    Food sandwich = new FastFood("Sandwich", 8.99, "Bread, chicken, lettuce, mayo");
+    OrganicFood organicPizza = new OrganicFood("Organic Pizza", 15.99, "Dough, tomato sauce, cheese, organic vegetables", true);
+    OrganicFood organicBurger = new OrganicFood("Organic Burger", 12.99, "Organic beef patty, organic lettuce, tomato, cheese", true);
+    OrganicFood organicSandwich = new OrganicFood("Organic Sandwich", 8.99, "Organic bread, organic chicken, organic lettuce, organic mayo", true);
     // Create a restaurant object
     FastFood mcdonalds = new FastFood("McDonalds", 0, "123 Main St");
     mcdonalds.addFoodToMenu(pizza);
     mcdonalds.addFoodToMenu(burger);
     mcdonalds.addFoodToMenu(sandwich);
+    mcdonalds.addFoodToMenu(organicPizza);
+    mcdonalds.addFoodToMenu(organicBurger);
+    mcdonalds.addFoodToMenu(organicSandwich);
     // Print out the menu
     mcdonalds.printMenu();
     // Get customer information
@@ -44,6 +50,11 @@ public class Main {
     pizza.cook();
     burger.cook();
     sandwich.cook();
+    organicPizza.cook();
+    organicBurger.cook();
+    organicSandwich.cook();
     scanner.close();
   }
+
+
 }

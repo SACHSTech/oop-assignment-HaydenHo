@@ -7,9 +7,9 @@ public class Main {
     Food pizza = new FastFood("Pizza", 15.99, "Dough, tomato sauce, cheese");
     Food burger = new FastFood("Burger", 12.99, "Beef patty, lettuce, tomato, cheese");
     Food sandwich = new FastFood("Sandwich", 8.99, "Bread, chicken, lettuce, mayo");
-    OrganicFood organicPizza = new OrganicFood("Organic Pizza", 15.99, "Dough, tomato sauce, cheese, organic vegetables", true);
-    OrganicFood organicBurger = new OrganicFood("Organic Burger", 12.99, "Organic beef patty, organic lettuce, tomato, cheese", true);
-    OrganicFood organicSandwich = new OrganicFood("Organic Sandwich", 8.99, "Organic bread, organic chicken, organic lettuce, organic mayo", true);
+    OrganicFood organicPizza = new OrganicFood("Organic Pizza", 17.99, "Dough, tomato sauce, cheese, organic vegetables", true);
+    OrganicFood organicBurger = new OrganicFood("Organic Burger", 14.99, "Organic beef patty, organic lettuce, tomato, cheese", true);
+    OrganicFood organicSandwich = new OrganicFood("Organic Sandwich", 10.99, "Organic bread, organic chicken, organic lettuce, organic mayo", true);
     // Create a restaurant object
     FastFood mcdonalds = new FastFood("McDonalds", 0, "123 Main St");
     OrganicFood wholefoods = new OrganicFood("WholeFoods", 0, "123 Main St", false);
@@ -53,7 +53,7 @@ public class Main {
     // Print out the order summary
     order.printOrderSummary();
     // Print out the total cost of the order
-    System.out.println("Total cost: $" + order.calculateTotalCost());
+    System.out.println("Total cost: $" + Math.round(order.calculateTotalCost() * 1.13 * 100.00)/100.00);
     pizza.cook();
     burger.cook();
     sandwich.cook();

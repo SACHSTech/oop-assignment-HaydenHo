@@ -7,10 +7,6 @@ class OrganicFood extends Food {
         this.isOrganic = isOrganic;
         menu = new Menu();
     }
-    public boolean getIsOrganic() {
-        return isOrganic;
-    }
-
     public void addFoodToMenu(Food food) {
         menu.addFoodToMenu(food);
     }
@@ -26,5 +22,12 @@ class OrganicFood extends Food {
     public void cook() {
         System.out.println("Cooking "+ getName());
     }
-    
+
+    public boolean isOrganic() {
+        return isOrganic;
+    }
+
+    public void setOrganic(boolean organic) {
+        isOrganic = organic;
+    }
 }

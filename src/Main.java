@@ -12,14 +12,16 @@ public class Main {
     OrganicFood organicSandwich = new OrganicFood("Organic Sandwich", 8.99, "Organic bread, organic chicken, organic lettuce, organic mayo", true);
     // Create a restaurant object
     FastFood mcdonalds = new FastFood("McDonalds", 0, "123 Main St");
+    OrganicFood wholefoods = new OrganicFood("WholeFoods", 0, "123 Main St", false);
     mcdonalds.addFoodToMenu(pizza);
     mcdonalds.addFoodToMenu(burger);
     mcdonalds.addFoodToMenu(sandwich);
-    mcdonalds.addFoodToMenu(organicPizza);
-    mcdonalds.addFoodToMenu(organicBurger);
-    mcdonalds.addFoodToMenu(organicSandwich);
+    wholefoods.addFoodToMenu(organicPizza);
+    wholefoods.addFoodToMenu(organicBurger);
+    wholefoods.addFoodToMenu(organicSandwich);
     // Print out the menu
     mcdonalds.printMenu();
+    wholefoods.printMenu();
     // Get customer information
     System.out.print("Enter customer name: ");
     String customerName = scanner.nextLine();
@@ -38,7 +40,12 @@ public class Main {
       if (selectedFood != null) {
         order.addFoodToOrder(selectedFood);
       } else {
-        System.out.println("Sorry, that food item is not available.");
+        selectedFood = wholefoods.findFoodInMenu(foodItem);
+        if (selectedFood != null) {
+          order.addFoodToOrder(selectedFood);
+        } else {
+          System.out.println("Sorry, that food item is not available.");
+        }
       }
       System.out.print("Add another item to order (y/n)? ");
       addAnother = scanner.nextLine();

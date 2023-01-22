@@ -1,9 +1,11 @@
-abstract class Food {
+public abstract class Food {
     private String name;
     private double price;
     private String ingredients;
+    
 
     public Food(String name, double price, String ingredients) {
+        super();
         this.name = name;
         this.price = price;
         this.ingredients = ingredients;

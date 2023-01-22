@@ -4,9 +4,9 @@ public class Main {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     // Create a food object
-    Food pizza = new Food("Pizza", 0, "Dough, tomato sauce, cheese");
-    Food burger = new Food("Burger", 0, "Beef patty, lettuce, tomato, cheese");
-    Food sandwich = new Food("Sandwich", 0, "Bread, chicken, lettuce, mayo");
+    Food pizza = new Food("Pizza", 15.99, "Dough, tomato sauce, cheese");
+    Food burger = new Food("Burger", 12.99, "Beef patty, lettuce, tomato, cheese");
+    Food sandwich = new Food("Sandwich", 8.99, "Bread, chicken, lettuce, mayo");
     // Create a restaurant object
     FastFood mcdonalds = new FastFood("McDonalds", 0, "123 Main St");
     mcdonalds.addFoodToMenu(pizza);
